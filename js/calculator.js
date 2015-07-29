@@ -1,6 +1,10 @@
+//javascript to make the calculator functional 
 
+//global variable to store the value of buttons that are pressed*/
 var memory = '';
 
+
+//initialize click events
 function init()
 	{
 		document.getElementById('clrEntry').addEventListener("click", clearEntry);
@@ -21,17 +25,21 @@ function init()
 		document.getElementById('n8').addEventListener("click", number8);
 		document.getElementById('n9').addEventListener("click", number9);
 	}
+
+//clear the display
 function clearEntry()
 	{
 		document.getElementById('display').value ='';
 		return '';
 	}
+//clear the memory and display
 function clear()
 	{	
 		document.getElementById('display').value ='';
 		memory = '';
 		return '';
 	}	
+//operation buttons
 function divide()
 	{
 		equal();
@@ -67,6 +75,8 @@ function equal()
 		memory = result;
 		return result;
 	}
+
+//assign value to the buttons
 function number0()
 	{
 		document.getElementById('display').value += 0;
@@ -128,5 +138,7 @@ function number9()
 		return 9;
 	}
 
+
+//wait for the DOM to be loaded before user interacts with page
 window.addEventListener("load", init, false);
 
