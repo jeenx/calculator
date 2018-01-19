@@ -4,4 +4,4 @@ This is just a simple calculator. My main focus was to practice using <b>event h
 
 Project is still <b>in progress</b> and I will keep updating it since it is still not fully functional.
 
-<a href='http://jimtario.github.io/calculator'>Click here to view the live demo</a>
+<a href='http://jeenx.github.io/calculator'>Click here to view the live demo</a>
